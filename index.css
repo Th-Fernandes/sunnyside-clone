@@ -1,0 +1,305 @@
+/* ===  GLOBAL === */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ===  BODY === */
+body {
+    font-size: 1.2rem;
+}
+/* ===  HEADER === */
+
+header {
+    background: url(./images/desktop/image-header.jpg);
+    background-position: center; 
+    height: 100vh;
+}
+
+.div-header-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 1rem 3rem;
+}
+
+
+nav a {
+    margin: 2rem;
+    color: white;
+}
+
+nav a:last-child {
+    background: #fff;
+    border-radius: 16px;
+    color: black;
+
+    padding: 0.6rem 1.5rem;
+}
+
+nav a:last-child:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: white;
+
+    transition: background 0.75s;
+}
+
+header h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    color: white;
+}
+
+.header-img {
+    text-align: center;
+    margin-top: 10rem;
+    font-size: 3rem;
+    font-family:  'Fraunces', serif;
+    color: #fff;
+}
+/* ===  FIRST&SECOND SECTION === */
+
+
+.Section {
+    display: flex; 
+}
+
+.Section.firstSection a:hover {
+    transition: background 0.5s;
+
+    background:hsl(51, 100%, 49%);
+}
+
+.section-div {
+    padding: 10rem;
+    width: 50vw;
+}
+
+.section-div a:hover {
+    transition: background 0.5s;
+
+    background:hsl(7, 99%, 70%);
+}
+
+.Section h3 {
+    font-family:  'Fraunces', serif;
+    font-size: 4rem;
+    
+    margin-bottom: 2rem;
+} 
+
+.section-div  p {
+    font-family: 'Barlow', sans sans-serif;
+    opacity: 0.3;
+    line-height: 1.5;
+
+    margin-bottom: 2rem;
+}
+.Section-image {
+    width: 50vw;
+}
+
+.Section-image img {
+    width: 100%;
+    height: 100%;
+}
+/* === THIRD SECTION === */
+.Section-image.graphicDesign,
+.Section-image.photography {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 60vh;
+    padding: 0rem 5rem;
+
+    background-size: 100% 100%;
+   
+    text-align: center; 
+    font-family: 'Barlow', serif;
+    font-size: 1.2rem;
+}
+
+.Section-image.graphicDesign p,
+.Section-image.photography p
+ {
+    opacity: 0.3;
+}
+
+.graphicDesign{
+    background-image: url("./images/desktop/image-graphic-design.jpg");
+}
+
+.photography {
+    background-image: url("./images/desktop/image-photography.jpg");
+}
+
+.Section-image p {
+    margin-bottom: 5rem;
+}
+/* === CLIENT SECTION === */
+.client-section {
+    height: 100vh;
+}
+
+.client-section h3 {
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    opacity: 0.3;
+
+    text-align: center;
+
+    padding: 10rem 10rem 5rem 10rem;
+}
+
+.clients-list {
+    display: flex; 
+    justify-content: space-around;
+    max-height: 500px;
+}
+
+.clients {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    text-align: center;
+}
+
+.clients img {
+    width: 20%;
+    border-radius: 50%;
+
+    margin-bottom: 4rem;
+}
+
+.clients p {
+    margin-bottom: 5rem;
+    font-family: 'Barlow', serif;
+    line-height: 1.5; 
+}
+
+/* === GALERY SECTION === */
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photos img {
+    width: 25%;
+}
+/* === FOOTER === */
+footer {
+    height: 45vh;
+    background: hsl(168, 41%, 73%);
+    color: hsl(168, 34%, 41%);
+}
+
+.footer {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 5rem 0;
+}
+
+.footer h3 {
+    font-size: 2rem;
+    font-family: 'fraunces', serif;
+    font-weight: 900;
+}
+
+.nav-footer a {
+    margin: 0 3rem;
+    font-family: 'Barlow', serif;
+    color: hsl(168, 34%, 41%);
+}
+
+.nav-footer a:hover {
+    color:white;
+    transition: background 0.5s;
+}
+
+.social a img {
+    margin: 3rem 2rem 0 0;
+}
+/* === RESPONSIVE=== */
+@media (max-width: 800px) {
+    
+    header {
+        height: 70vh;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .Section {
+        flex-wrap: wrap;
+    }
+
+    .Section.firstSection {
+        flex-direction: column-reverse;
+    }
+
+    .section-div {
+        padding: 1rem;
+        width: 100vw;
+        height: 40vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .section-div h3 {
+         font-size: 3rem 
+    }
+   
+    .Section-image {
+        width: 100vw;
+    }
+    
+    .Section-image.graphicDesign,
+    .Section-image.photography {
+    padding: 0;
+    height: 50vh;
+    }
+
+    .client-section {
+        height: 110vh;
+    }
+    .client-section h3 {
+        padding: 3rem 0 5rem;
+    }
+
+    .clients-list {
+        flex-wrap: wrap;
+        max-height: 9000px;
+    }
+
+    .clients {
+        width: 100%;
+    }
+
+    .photos img {
+        width: 50%;
+    }
+
+    footer {
+        height: 30vh;
+    }
+
+}
